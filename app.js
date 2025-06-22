@@ -39,7 +39,7 @@
 
 
 //for(let i = 0; i < 5; i++ ){
-//    console.log(i)
+//   console.log(i)
 //}
 
 
@@ -61,3 +61,24 @@
   //      console.log(i)
   //  }
 //}
+
+
+
+//function add(a,b){
+//    return a + b;
+//}
+//console.log (add (3,4));
+
+
+
+//function convertCelciusToFahrenheit(celcius){
+//    return celcius * 1.8 + 32
+//}
+//console.log (convertCelciusToFahrenheit(30));
+
+// THE ABOVE FUNCTION IS THE SAME AS THE FOLLOWING ARROW FUNCTION:
+
+//const convertCelciusToFahrenheit = (celcius) => {
+//    return celcius * 1.8 + 32
+//}
+//console.log (convertCelciusToFahrenheit(0));
