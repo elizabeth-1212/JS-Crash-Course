@@ -82,3 +82,15 @@
 //    return celcius * 1.8 + 32
 //}
 //console.log (convertCelciusToFahrenheit(0));
+
+
+
+//function multiply(a,b) {
+//    return a * b
+//}
+//console.log(multiply(3,4));
+
+//const multiply = (a,b) => {
+//    return a*b
+//}
+//console.log(multiply(3,4));
