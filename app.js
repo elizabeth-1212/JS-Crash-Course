@@ -94,3 +94,9 @@
 //    return a*b
 //}
 //console.log(multiply(3,4));
+
+
+
+let grades = ['A+', 'A', 'FAIL']
+let goodGrades = grades.filter (element => element !== 'FAIL')
+console.log(goodGrades)
