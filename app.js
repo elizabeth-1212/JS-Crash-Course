@@ -45,7 +45,7 @@
 
 
 //for(let i = 1; i <= 20; ++i){
-  // if (i % 3 === 0 && i % 5 ===0){
+  // if (i % 3 === 0 && i % 5 === 0){
   //      console.log('Frontend Simplified')
   //      }   
   
@@ -97,6 +97,28 @@
 
 
 
-let grades = ['A+', 'A', 'FAIL']
-let goodGrades = grades.filter (element => element !== 'FAIL')
-console.log(goodGrades)
+//let grades = ['A+', 'A', 'FAIL']
+//let goodGrades = grades.filter (element => element !== 'FAIL')
+//console.log(goodGrades)
+
+
+//let grades = ['A+', 'A', 'FAIL']
+//let goodGrades = []
+//for (let i = 0; i < grades.length; ++i) {
+//    if (grades[i] !== 'FAIL') {
+//        goodGrades.push(grades[i]);
+//    }
+//}
+//console.log(goodGrades);
+
+
+//let dollars = [1, 5, 10, 3]
+//let cents = dollars.map(element => element * 100);
+//console.log(cents);
+
+
+let dollars = [1, 5, 10, 3]
+let cents = []
+for (let i = 0; i < dollars.length; i++) 
+console.log(dollars[i] * 100);
+    
