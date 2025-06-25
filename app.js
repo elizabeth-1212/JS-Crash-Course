@@ -117,10 +117,38 @@
 //console.log(cents);
 
 
-let dollars = [1, 5, 10, 3]
-let cents = []
-for (let i = 0; i < dollars.length; i++) {
-    cents.push(dollars[i] * 100)
+//let dollars = [1, 5, 10, 3]
+//let cents = []
+//for (let i = 0; i < dollars.length; i++) {
+//    cents.push(dollars[i] * 100)
+//}
+//console.log(cents);
+  
+
+
+
+let users = [{
+    username: 'Zen',
+    email: 'Zen@frontendsimplified.com',
+    password: 'Zen123',
+    discordId: 'Zen#0001',
+    subscriptionStatus: 'VIP',
+    lessonsCompleted: [0, 1, 2, 3],
+}]
+
+function register(user){
+    users.push(user);
 }
-console.log(cents);
+
+    //let user = {
+      //  username: username,
+      //  email: email,
+      //  password: password,
+      //  discordId: discordId,
+      //  subscriptionStatus: subscriptionStatus,
+      //  lessonsCompleted: lessonsCompleted
+    //}
     
+register({username:'David', email:'david@frontendsimplified.com', password:'david123', discordId:'david#0001', subscriptionStatus:'VIP', lessonsCompleted:[0, 1]});
+
+console.log(users);
