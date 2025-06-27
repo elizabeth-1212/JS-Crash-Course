@@ -127,18 +127,18 @@
 
 
 
-let users = [{
-    username: 'Zen',
-    email: 'Zen@frontendsimplified.com',
-    password: 'Zen123',
-    discordId: 'Zen#0001',
-    subscriptionStatus: 'VIP',
-    lessonsCompleted: [0, 1, 2, 3],
-}]
+//let users = [{
+  //  username: 'Zen',
+  //  email: 'Zen@frontendsimplified.com',
+  //  password: 'Zen123',
+  //  discordId: 'Zen#0001',
+  //  subscriptionStatus: 'VIP',
+  //  lessonsCompleted: [0, 1, 2, 3],
+//}]
 
-function register(user){
-    users.push(user);
-}
+//function register(user){
+//    users.push(user);
+//}
 
     //let user = {
       //  username: username,
@@ -149,6 +149,27 @@ function register(user){
       //  lessonsCompleted: lessonsCompleted
     //}
     
-register({username:'David', email:'david@frontendsimplified.com', password:'david123', discordId:'david#0001', subscriptionStatus:'VIP', lessonsCompleted:[0, 1]});
+//register({username:'David', email:'david@frontendsimplified.com', password:'david123', discordId:'david#0001', subscriptionStatus:'VIP', lessonsCompleted:[0, 1]});
 
-console.log(users);
+//console.log(users);
+
+
+
+
+//function getVideo(subscriptionStatus) {
+//    return new Promise((resolve, reject) => {
+//        if (subscriptionStatus === "VIP"){
+//            resolve("show video")
+//        }
+//        else if (subscriptionStatus === "FREE"){    
+//            resolve("show trailer")
+//        }
+//        else reject("no video")
+//    } 
+//)
+//}
+
+//async function main(){
+//    console.log(await getVideo())
+//}
+//main();
