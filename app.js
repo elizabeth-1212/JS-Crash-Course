@@ -173,3 +173,29 @@
 //    console.log(await getVideo())
 //}
 //main();
+
+
+
+//function hoursIntoSeconds(hour){
+ //   return hour * 60 * 60;
+//}
+//console.log (hoursIntoSeconds(2));
+
+
+//function calcPerimeter (length, width){
+//    return 2 * (length + width);
+//}
+//console.log (calcPerimeter(6, 7));
+
+
+//function calcAreaTriangle (base, height){
+//    return .5 * base * height;
+//}
+//console.log (calcAreaTriangle(2, 3));
+
+
+function appendFrontend (string){
+    return string + 'Frontend';
+}
+console.log (appendFrontend('Banana'));
+
