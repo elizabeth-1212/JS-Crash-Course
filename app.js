@@ -194,8 +194,51 @@
 //console.log (calcAreaTriangle(2, 3));
 
 
-function appendFrontend (string){
-    return string + 'Frontend';
-}
-console.log (appendFrontend('Banana'));
+//function appendFrontend (string){
+//    return string + 'Frontend';
+//}
+//c
+// console.log (appendFrontend('Banana'));
 
+
+
+function sumGreaterThanOneHundred (num1, num2){
+    if (num1 + num2 > 100){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+console.log (sumGreaterThanOneHundred(50, 60));
+
+function sumGreaterThanOneHundred (num1, num2){
+    return (num1 + num2 > 100);
+}
+console.log (sumGreaterThanOneHundred(50, 60));
+
+
+function lessThanOrEqualToZero (num) {
+    return num <= 0
+}
+console.log (lessThanOrEqualToZero(-5));
+
+
+function oppositeBoolean (bool){
+    if (bool === false) {
+        return true;
+    }
+    return false;
+}
+console.log (oppositeBoolean(true));
+
+function oppositeBoolean (bool){
+    return !true;
+}
+console.log (oppositeBoolean(true));
+
+
+function isNotNumberZero (num){
+    return num !== 0;
+}
+console.log(isNotNumberZero(0));
