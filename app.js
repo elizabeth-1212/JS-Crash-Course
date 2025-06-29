@@ -242,3 +242,46 @@ function isNotNumberZero (num){
     return num !== 0;
 }
 console.log(isNotNumberZero(0));
+
+
+function calcRemainder (num1, num2){
+    return num1 % num2;
+}
+console.log (calcRemainder(7, 8));
+
+
+function isOdd (num){
+    return num !== 0;
+}
+console.log (isOdd(15));
+
+
+function booleanInteger (num){
+    if (num % 2 === 0){
+    return 1;
+    }
+    return -1;
+}
+console.log (booleanInteger(5));
+
+function booleanInteger (num){
+    return num % 2 === 0 ? 1 : -1;
+}
+console.log (booleanInteger(5));
+
+
+function isLoggedInAndSubscribed (loggedIn, subscribed){
+    if (loggedIn === 'LOGGED_IN' &&  subscribed === 'SUBSCRIBED'){
+        return true;
+    }
+    return false;
+}
+console.log (isLoggedInAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'));
+
+
+function isLoggedInAndSubscribed (loggedIn, subscribed){
+    return (loggedIn === 'LOGGED_IN' &&  subscribed === 'SUBSCRIBED');
+}
+console.log (isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'));
+
+
