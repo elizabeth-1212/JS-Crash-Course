@@ -280,8 +280,12 @@ console.log (isLoggedInAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'));
 
 
 function isLoggedInAndSubscribed (loggedIn, subscribed){
-    return (loggedIn === 'LOGGED_IN' &&  subscribed === 'SUBSCRIBED');
+    return (loggedIn === 'LOGGED_IN' && subscribed === 'SUBSCRIBED');
 }
 console.log (isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'));
 
 
+function isLoggedInOrSubscribed (loggedIn, subscribed){
+     return (loggedIn === 'LOGGED_IN' || subscribed === 'SUBSCRIBED');
+}
+console.log (isLoggedInOrSubscribed('LOGGED_IN', 'UNSUBSCRIBED'));
