@@ -202,90 +202,111 @@
 
 
 
-function sumGreaterThanOneHundred (num1, num2){
-    if (num1 + num2 > 100){
-        return true;
+//BEGINNER QUESTIONS:
+
+//function sumGreaterThanOneHundred (num1, num2){
+//    if (num1 + num2 > 100){
+//        return true;
+//    }
+//    else{
+//        return false;
+//    }
+//}
+//console.log (sumGreaterThanOneHundred(50, 60));
+
+//function sumGreaterThanOneHundred (num1, num2){
+//    return (num1 + num2 > 100);
+//}
+//console.log (sumGreaterThanOneHundred(50, 60));
+
+
+//function lessThanOrEqualToZero (num) {
+//    return num <= 0
+//}
+//console.log (lessThanOrEqualToZero(-5));
+
+
+//function oppositeBoolean (bool){
+//    if (bool === false) {
+//        return true;
+//    }
+//    return false;
+//}
+//console.log (oppositeBoolean(true));
+
+//function oppositeBoolean (bool){
+//    return !true;
+//}
+//console.log (oppositeBoolean(true));
+
+
+//function isNotNumberZero (num){
+//    return num !== 0;
+//}
+//console.log(isNotNumberZero(0));
+
+
+//function calcRemainder (num1, num2){
+//    return num1 % num2;
+//}
+//console.log (calcRemainder(7, 8));
+
+
+//function isOdd (num){
+//    return num !== 0;
+//}
+//console.log (isOdd(15));
+
+
+//function booleanInteger (num){
+//    if (num % 2 === 0){
+//    return 1;
+//    }
+//    return -1;
+//}
+//console.log (booleanInteger(5));
+
+//function booleanInteger (num){
+//    return num % 2 === 0 ? 1 : -1;
+//}
+//console.log (booleanInteger(5));
+
+
+//function isLoggedInAndSubscribed (loggedIn, subscribed){
+//    if (loggedIn === 'LOGGED_IN' &&  subscribed === 'SUBSCRIBED'){
+//        return true;
+//    }
+//    return false;
+//}
+//console.log (isLoggedInAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'));
+
+
+//function isLoggedInAndSubscribed (loggedIn, subscribed){
+//    return (loggedIn === 'LOGGED_IN' && subscribed === 'SUBSCRIBED');
+//}
+//console.log (isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'));
+
+
+//function isLoggedInOrSubscribed (loggedIn, subscribed){
+//     return (loggedIn === 'LOGGED_IN' || subscribed === 'SUBSCRIBED');
+//}
+//console.log (isLoggedInOrSubscribed('LOGGED_IN', 'UNSUBSCRIBED'));
+
+
+
+
+function truthyOrFalsy (elem1, elem2) {
+    if (!elem1){
+        return elem1;
     }
-    else{
-        return false;
+    else {
+        return elem2;
     }
 }
-console.log (sumGreaterThanOneHundred(50, 60));
+console.log(truthyOrFalsy (4, null));
 
-function sumGreaterThanOneHundred (num1, num2){
-    return (num1 + num2 > 100);
+
+function truthyOrFalsy (elem1, elem2) {
+    return (!elem1) ? elem1 : elem2;
 }
-console.log (sumGreaterThanOneHundred(50, 60));
-
-
-function lessThanOrEqualToZero (num) {
-    return num <= 0
-}
-console.log (lessThanOrEqualToZero(-5));
-
-
-function oppositeBoolean (bool){
-    if (bool === false) {
-        return true;
-    }
-    return false;
-}
-console.log (oppositeBoolean(true));
-
-function oppositeBoolean (bool){
-    return !true;
-}
-console.log (oppositeBoolean(true));
-
-
-function isNotNumberZero (num){
-    return num !== 0;
-}
-console.log(isNotNumberZero(0));
-
-
-function calcRemainder (num1, num2){
-    return num1 % num2;
-}
-console.log (calcRemainder(7, 8));
-
-
-function isOdd (num){
-    return num !== 0;
-}
-console.log (isOdd(15));
-
-
-function booleanInteger (num){
-    if (num % 2 === 0){
-    return 1;
-    }
-    return -1;
-}
-console.log (booleanInteger(5));
-
-function booleanInteger (num){
-    return num % 2 === 0 ? 1 : -1;
-}
-console.log (booleanInteger(5));
-
-
-function isLoggedInAndSubscribed (loggedIn, subscribed){
-    if (loggedIn === 'LOGGED_IN' &&  subscribed === 'SUBSCRIBED'){
-        return true;
-    }
-    return false;
-}
-console.log (isLoggedInAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'));
-
-
-function isLoggedInAndSubscribed (loggedIn, subscribed){
-    return (loggedIn === 'LOGGED_IN' && subscribed === 'SUBSCRIBED');
-}
-console.log (isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'));
-
-
-function isLoggedInOrSubscribed (loggedIn, subscribed){
-     return (loggedIn === 'LOGGED_IN' || subscribed === 'SUBSCRIBED');
-}
-console.log (isLoggedInOrSubscribed('LOGGED_IN', 'UNSUBSCRIBED'));
+console.log(truthyOrFalsy (5, 0));
