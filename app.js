@@ -324,21 +324,26 @@ console.log(falsyOrTruthy (5, 10));
 //console.log (lastElem([1, 2, 3, 4]));
 
 
-
-function arrSum (arr){
-    for (let i = 0; i < arr.length; ++i);{
-    console.log(arr[i]);
-    }
-    console.log('for loop broke');    
-}
-console.log(arrSum([1, 2, 3, 4, 5, 6]));
-
-
+//MEMORIZE:  USED TO LOOP THRU EACH ELEMENT IN AN ARRAY
 //function arrSum (arr){
-//    let sum = 0;
-//    for (let i = 0; i < arr.length; ++i);{
-//        sum = sum + arr[i];
+//    for (let i = 0; i < arr.length; ++i){
+//   console.log(arr[i]);
 //    }
-//    return sum;
+//    console.log('for loop broke');    
 //}
 //console.log(arrSum([1, 2, 3, 4, 5, 6]));
+
+
+function arrSum (arr){
+    let sum = 0;
+    for (let i = 0; i < arr.length; ++i){
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+console.log(arrSum([25, 50, 5]));
+
+
+
+
+
