@@ -345,5 +345,12 @@ console.log(arrSum([25, 50, 5]));
 
 
 
-
+function progressiveSum (num){
+    let sum = 0;
+    for (let i = 0; i <= num; ++i){
+        sum = sum + i;
+    }
+    return sum;
+}
+console.log(progressiveSum(5));
 
