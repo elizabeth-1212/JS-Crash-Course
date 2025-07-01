@@ -295,7 +295,7 @@
 
 
 
-function truthyOrFalsy (elem1, elem2) {
+function falsyOrTruthy (elem1, elem2) {
     if (!elem1){
         return elem1;
     }
@@ -303,10 +303,42 @@ function truthyOrFalsy (elem1, elem2) {
         return elem2;
     }
 }
-console.log(truthyOrFalsy (4, null));
+console.log(falsyOrTruthy (0, 4));
 
 
-function truthyOrFalsy (elem1, elem2) {
+function falsyOrTruthy (elem1, elem2) {
     return (!elem1) ? elem1 : elem2;
 }
-console.log(truthyOrFalsy (5, 0));
+console.log(falsyOrTruthy (5, 10));
+
+
+//function arrLength (arr){
+//    return arr.length;
+//}
+//console.log (arrLength([1, 2, 3, 4]));
+
+
+//function lastElem (arr){
+//   return arr[arr.length - 1];
+//}
+//console.log (lastElem([1, 2, 3, 4]));
+
+
+
+function arrSum (arr){
+    for (let i = 0; i < arr.length; ++i);{
+    console.log(arr[i]);
+    }
+    console.log('for loop broke');    
+}
+console.log(arrSum([1, 2, 3, 4, 5, 6]));
+
+
+//function arrSum (arr){
+//    let sum = 0;
+//    for (let i = 0; i < arr.length; ++i);{
+//        sum = sum + arr[i];
+//    }
+//    return sum;
+//}
+//console.log(arrSum([1, 2, 3, 4, 5, 6]));
