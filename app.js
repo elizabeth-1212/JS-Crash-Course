@@ -366,3 +366,12 @@ function calcTime(seconds){
     return timerMinutes + ':' + timerSeconds;
 }
 console.log(calcTime(500));
+
+
+
+function getMax(arr){
+    for (i=0; i < arr.length; ++i){
+
+    }
+}
+console.log()
