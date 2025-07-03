@@ -312,16 +312,16 @@ function falsyOrTruthy (elem1, elem2) {
 console.log(falsyOrTruthy (5, 10));
 
 
-//function arrLength (arr){
-//    return arr.length;
-//}
-//console.log (arrLength([1, 2, 3, 4]));
+function arrLength (arr){
+    return arr.length;
+}
+console.log (arrLength([1, 2, 3, 6]));
 
 
-//function lastElem (arr){
-//   return arr[arr.length - 1];
-//}
-//console.log (lastElem([1, 2, 3, 4]));
+function lastElem (arr){
+   return arr[arr.length - 1];
+}
+console.log (lastElem([1, 2, 3, 6]));
 
 
 //MEMORIZE:  USED TO LOOP THRU EACH ELEMENT IN AN ARRAY
@@ -370,8 +370,31 @@ console.log(calcTime(500));
 
 
 function getMax(arr){
-    for (i=0; i < arr.length; ++i){
-
+    let max = arr[0];
+    for (i=1; i < arr.length; ++i){
+        if (arr[i] > max){
+            max = arr[i];
+        }
     }
+    return max;
 }
-console.log()
+console.log(getMax([10, 65, 41]));
+
+
+
+function reverseString(str){
+    let reversedString = '';
+    for (i = 0; i < str.length; ++i){
+        reversedString = str[i] + reversedString;
+    }
+    return reversedString;
+}
+console.log (reverseString('abc'));
+
+
+function reverseString(str){
+    return str.split('').reverse().join('');
+}
+console.log (reverseString('abc'));
+
+
