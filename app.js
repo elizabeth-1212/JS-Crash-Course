@@ -398,3 +398,24 @@ function reverseString(str){
 console.log (reverseString('abc'));
 
 
+function convertToZeros(arr){
+    let newArray = [];
+    for (i = 0; i < arr.length; ++i){
+        newArray[i] = 0;
+    }
+    return newArray;
+}
+console.log(convertToZeros([1, 2, 3, 4]));
+
+
+function convertToZeros(arr){
+    return new Array(arr.length).fill(0);
+}
+console.log(convertToZeros([1, 2, 3, 4]));
+
+
+
+function convertToZeros(arr){
+    return arr.map(elem => 0);
+}
+console.log(convertToZeros([1, 5, 8]));
