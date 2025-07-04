@@ -419,3 +419,31 @@ function convertToZeros(arr){
     return arr.map(elem => 0);
 }
 console.log(convertToZeros([1, 5, 8]));
+
+
+
+function removeApples (arr){
+    let noApples = []
+    for (let i = 0; i < arr.length; ++i){
+        if (arr[i] !== 'apple'){
+            noApples.push(arr[i]);
+        }
+    }
+    return noApples;
+}
+console.log(removeApples(['banana', 'apple', 'orange', 'apple']));
+
+
+function removeApples (arr){
+    return noApples = arr.filter(elem => elem !== 'apple');
+}
+console.log(removeApples(['banana', 'apple', 'orange', 'apple']));
+
+
+
+function filterOutFalsy (arr){
+    return arr.filter(elem => !!elem === true)
+}
+console.log(filterOutFalsy(['banana', 500, false, 0]));
+
+
