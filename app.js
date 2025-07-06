@@ -447,3 +447,63 @@ function filterOutFalsy (arr){
 console.log(filterOutFalsy(['banana', 500, false, 0]));
 
 
+function filterOutFalsy (arr){
+    let truthyArr = [];
+    for (i = 0; i < arr.length; ++i){
+        if (!!arr[i] === true){
+            truthyArr.push (arr[i]);
+        }
+    }
+    return truthyArr;
+}
+console.log(filterOutFalsy(['banana', 500, false, 0]));
+
+
+function convertToBoolean(arr){
+    return arr.map(elem => !!elem)
+}
+console.log(convertToBoolean([0, 500, "dog", NaN, []]));
+
+
+function showRating(rating){
+    let ratings = "";
+    for (let i = 0; i < rating; ++i){
+        if (i === 3){
+            ratings = ratings + "*";
+        }
+        else{
+            ratings = ratings + "* ";
+        }
+    }
+    return ratings;
+}
+console.log(showRating(5));
+
+
+function showRating(rating){
+    let ratings = "";
+    for (let i = 0; i < rating; ++i){
+        ratings = ratings + "*";
+        if (i !== rating - 1){
+            ratings = ratings + " ";
+        }
+    }
+    return ratings;
+}
+console.log(showRating(5));
+
+
+function showRating(rating){
+    let ratings = "";
+    for (let i = 0; i < Math.floor(rating); ++i){
+        ratings += "*";
+        if (i !== Math.floor(rating) - 1){
+            ratings += " ";
+        }
+    }
+    if(!Number.isInteger(rating)){
+        ratings += " .";
+    }
+    return ratings;
+}
+console.log(showRating(3.5));
