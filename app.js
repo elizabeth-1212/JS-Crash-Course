@@ -507,3 +507,21 @@ function showRating(rating){
     return ratings;
 }
 console.log(showRating(3.5));
+
+
+
+function sortLowToHigh(numbers){
+    return numbers.sort((a, b) => a - b);
+}
+console.log(sortLowToHigh([5, 1, 10, 0, 4]));
+
+
+
+function sortHighToLow(numbers){
+    return numbers.sort((a, b) => b.price - a.price);
+}
+console.log(sortHighToLow([
+    {id: 1, price: 50},
+    {id: 2, price: 0},
+    {id: 3, price: 500},
+]));
