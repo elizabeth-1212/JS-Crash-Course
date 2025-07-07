@@ -542,7 +542,7 @@ postsByUser(5);
 
 
 async function firstSixIncomplete(userId) {
-    const promise = await fetch("https.//jsonplaceholder.typicode.com/todos");
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
 
     const result = await promise.json()
 
