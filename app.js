@@ -63,6 +63,12 @@
 //}
 
 
+let str = "Frontend Simplified";
+for (let i = 0; i < str.length; ++i){
+    console.log(str[i]);
+}
+
+
 
 //function add(a,b){
 //    return a + b;
@@ -295,14 +301,14 @@
 
 
 
-function falsyOrTruthy (elem1, elem2) {
-    if (!elem1){
-        return elem1;
-    }
-    else {
-        return elem2;
-    }
-}
+ function falsyOrTruthy (elem1, elem2) {
+     if (!elem1){
+         return elem1;
+     }
+     else {
+         return elem2;
+     }
+ }
 console.log(falsyOrTruthy (0, 4));
 
 
