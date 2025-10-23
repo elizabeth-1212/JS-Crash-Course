@@ -63,11 +63,15 @@
 //}
 
 
-let str = "Frontend Simplified";
-for (let i = 0; i < str.length; ++i){
-    console.log(str[i]);
-}
+//let str = "Frontend Simplified";
+//for (let i = 0; i < str.length; ++i){
+//    console.log(str[i]);
+//}
 
+function convertCelciusToFahrenheit(C){
+    return C * 1.8 +32
+}
+console.log (convertCelciusToFahrenheit(0));
 
 
 //function add(a,b){
@@ -90,6 +94,20 @@ for (let i = 0; i < str.length; ++i){
 //console.log (convertCelciusToFahrenheit(0));
 
 
+let grades = ['A+', 'A', 'FAIL']
+let newGrades = grades.filter(element => element !== 'FAIL')
+console.log(newGrades);
+
+let dollars = [1, 2, 5]
+let cents = dollars.map(elem => elem * 100)
+console.log(cents);
+
+let dollar = [1, 2, 5]
+let cent = []
+for (let i = 0; i < dollar.length; ++i){
+    cent.push(dollar[i] * 100)
+}
+    console.log (cent);
 
 //function multiply(a,b) {
 //    return a * b
