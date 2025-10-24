@@ -149,6 +149,12 @@ for (let i = 0; i < dollar.length; ++i){
 //console.log(cents);
   
 
+console.log(document.querySelector('h1'));
+console.log(document.getElementById('title'));
+
+function changeTitleToRed() {
+    document.querySelector('#title').style.color='red'
+}
 
 
 //let users = [{
