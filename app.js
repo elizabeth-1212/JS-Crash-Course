@@ -186,6 +186,8 @@ function changeTitleToRed() {
 
 
 
+
+
 //function getVideo(subscriptionStatus) {
 //    return new Promise((resolve, reject) => {
 //        if (subscriptionStatus === "VIP"){
@@ -203,6 +205,54 @@ function changeTitleToRed() {
 //    console.log(await getVideo())
 //}
 //main();
+
+
+function addNum(num1,num2){
+    return num1 + num2
+}
+console.log(addNum(2,3));
+
+function hoursToSeconds(hours){
+    return hours * 3600
+}
+console.log(hoursToSeconds(4));
+
+function perimeter(length, width){
+    return 2 * (length + width)
+}
+console.log(perimeter(6, 7));
+
+function areaTriangle(base, height){
+    return (base * height) / 2
+}
+console.log(areaTriangle(20, 20));
+
+function addString(string){
+    return string + "Frontend"
+}
+console.log(addString("Apple"));
+
+function greaterThanOneHundred(num1, num2){
+    return num1 + num2 > 100;
+}
+console.log(greaterThanOneHundred(45, 10));
+
+function lessThanOrEqualToZero(num){
+    return num <= 0;
+}
+console.log(lessThanOrEqualToZero(-8));
+
+function oppBoolean(boolean){
+    return !boolean;
+}
+console.log(oppBoolean(true));
+
+function isNotZero(element){
+    return element !== 0
+}
+console.log(isNotZero(""));
+
+
 
 
 
