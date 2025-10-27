@@ -250,9 +250,27 @@ console.log(oppBoolean(true));
 function isNotZero(element){
     return element !== 0
 }
-console.log(isNotZero(""));
+console.log(isNotZero(5));
 
+function calcRemainder(num1, num2){
+    return num1 % num2;
+}
+console.log(calcRemainder(9, 8));
 
+function isNumOdd(num1){
+    return (num1 % 2 !== 0);
+}
+console.log(isNumOdd(6));
+
+function booleanInteger(num){
+    return num % 2 === 0 ? 1 : -1;
+}
+console.log(booleanInteger(25));
+
+function isLoggedInAndSubscribed(str1, str2){
+    return (str1 === 'LOGGED_IN') || (str2 === 'SUBSCRIBED');
+}
+console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'UNSUBSCRIBED'));
 
 
 
