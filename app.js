@@ -273,6 +273,58 @@ function isLoggedInAndSubscribed(str1, str2){
 console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'UNSUBSCRIBED'));
 
 
+function filterFalsy(val1, val2){
+    return (!val1) ? val1 : val2;
+}    
+console.log(filterFalsy(null, 5));
+
+
+function arrayLength(arr){
+    return arr.length;
+}
+console.log(arrayLength([1, 5, 7, 9, 11, 13]));
+
+function lastElem(arr){
+    return ([arr.length - 1]);
+    }
+
+console.log(lastElem([1, 2, 3, 4]));
+
+
+function arrSum(arr){
+    let sum = 0;
+    for (let index = 0; index < arr.length; index++) {
+        sum = sum + arr[index];
+    }
+    return sum;
+}
+console.log(arrSum([10, 50, 2, 5]));
+
+
+function progressiveSum(num){
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+        sum = sum + i;   
+    }
+    return sum;
+}
+console.log(progressiveSum(4));
+
+
+function calcTime(sec){
+    let timerMin =  Math.floor (min = sec / 60);
+    let timerSec = sec % 60;
+
+    if (timerMin.toString().length === 1){
+        timerMin = '0' + timerMin; 
+    }
+
+    return timerMin + ':' + timerSec;
+}
+console.log(calcTime(500));
+
+
+
 
 //function hoursIntoSeconds(hour){
  //   return hour * 60 * 60;
