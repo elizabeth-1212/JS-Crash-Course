@@ -324,6 +324,33 @@ function calcTime(sec){
 console.log(calcTime(500));
 
 
+function getMax(arr){
+    let max = arr[0];
+        for (let i = 1; i < arr.length; ++i) {
+        if (arr[i] > max){
+            max = arr[i];
+        }
+    }
+    return max;
+}
+console.log(getMax([10, 18, 25]));
+
+
+function reverseString(str){
+    let reversedString =  ''
+    for (let i = 0; i < str.length; ++i) {
+        reversedString = str[i] + reversedString;
+        }
+        return reversedString;
+}
+console.log(reverseString('Samson'));
+
+
+function revStr(str){
+    return str.split('').reverse().join('');
+}
+console.log(revStr('abc'));
+
 
 
 //function hoursIntoSeconds(hour){
@@ -484,6 +511,7 @@ console.log (lastElem([1, 2, 3, 6]));
 //console.log(arrSum([1, 2, 3, 4, 5, 6]));
 
 
+/*
 function arrSum (arr){
     let sum = 0;
     for (let i = 0; i < arr.length; ++i){
@@ -519,19 +547,19 @@ console.log(calcTime(500));
 
 
 
-function getMax(arr){
-    let max = arr[0];
-    for (i=1; i < arr.length; ++i){
-        if (arr[i] > max){
-            max = arr[i];
-        }
-    }
-    return max;
-}
-console.log(getMax([10, 65, 41]));
+//function getMax(arr){
+  //  let max = arr[0];
+    //for (i=1; i < arr.length; ++i){
+      //  if (arr[i] > max){
+        //    max = arr[i];
+        //}
+    //}
+    //return max;
+//}
+//console.log(getMax([10, 65, 41]));
 
 
-
+/*
 function reverseString(str){
     let reversedString = '';
     for (i = 0; i < str.length; ++i){
@@ -702,3 +730,4 @@ async function firstSixIncomplete(userId) {
     
 }
 firstSixIncomplete(6);
+*/
