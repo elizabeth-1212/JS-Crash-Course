@@ -352,6 +352,46 @@ function revStr(str){
 console.log(revStr('abc'));
 
 
+function convertToZeros(arr){
+    let newArr = [];
+    for (let i = 0; i < arr.length; ++i) {
+        newArr[i] = 0;
+        }
+        return newArr;
+}
+console.log(convertToZeros([1, 2, 3]));
+
+
+function convertToZeros(arr){
+    return arr.map(elem => 0)
+}
+console.log(convertToZeros([1, 2, 3]));
+
+
+function convertToZeros(arr){
+    return new Array(arr.length).fill(0);
+}
+console.log(convertToZeros([1, 2, 3]));
+
+
+function removeApples(arr){
+    let noApple = [];
+    for (let i = 0; i < arr.length; ++i) {
+        if (arr[i] !== 'apple'){
+            noApple.push(arr[i]);
+        }  
+    }
+    return noApple;
+}
+console.log(removeApples(['banana', 'apple', 'orange', 'apple']));
+
+
+function removeApples(arr){
+    return arr.filter(elem => elem !== 'apple');
+}
+console.log(removeApples(['banana', 'grape', 'apple', 'orange']));
+
+
 
 //function hoursIntoSeconds(hour){
  //   return hour * 60 * 60;
