@@ -417,6 +417,25 @@ console.log(convertToBoolean([400, false, "hi", 0, 25]));
 
 
 
+function getRating(rating){
+    let ratings = "";
+    for (let i = 0; i < Math.floor(rating); ++i) {
+        ratings += "*";
+    
+        if (ratings !== Math.floor(rating) - 1){
+        ratings += " ";
+    }
+}
+    if (ratings !== Number.isInteger){
+        ratings += ".";
+    }
+        return ratings;
+}
+console.log(getRating(2.5));
+
+
+
+
 //function hoursIntoSeconds(hour){
  //   return hour * 60 * 60;
 //}
