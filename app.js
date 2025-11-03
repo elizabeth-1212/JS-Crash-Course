@@ -392,6 +392,30 @@ function removeApples(arr){
 console.log(removeApples(['banana', 'grape', 'apple', 'orange']));
 
 
+function filterOutFalsy(arr){
+    let falsy = []
+    for (let i = 0; i < arr.length; ++i) {
+        if (!!arr[i] === true){
+            falsy.push(arr[i]);
+        } 
+    }
+    return falsy;
+}
+console.log(filterOutFalsy([0, [], 3, 'hello']));
+
+
+function filterOutFalsy(arr){
+    return arr.filter(elem => !!elem === true);
+}
+console.log(filterOutFalsy([0, null, 5, 'hi']));
+
+
+function convertToBoolean(arr){
+    return arr.map(elem => !!elem);
+}
+console.log(convertToBoolean([400, false, "hi", 0, 25]));
+
+
 
 //function hoursIntoSeconds(hour){
  //   return hour * 60 * 60;
