@@ -434,6 +434,35 @@ function getRating(rating){
 console.log(getRating(2.5));
 
 
+function sortLowToHigh(arr){
+    return arr.sort((a, b) => a - b);
+        }
+console.log(sortLowToHigh([10, 3, 28, 17, 38, 8]));
+
+
+function sortHighToLow(prices){
+    return prices.sort((a, b) => b.price - a.price);
+}
+
+console.log(sortHighToLow([
+    {id: 1, price: 50},
+    {id: 2, price: 30},
+    {id: 3, price: 60},
+    {id: 4, price: 10}
+]));
+
+
+function getPosts(){
+    return new Promise ((resolve, reject) => {
+        resolve ("posts")
+    })
+}
+async function main() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const data = await response.json();
+}
+
+
 
 
 //function hoursIntoSeconds(hour){
