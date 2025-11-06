@@ -452,16 +452,14 @@ console.log(sortHighToLow([
 ]));
 
 
-function getPosts(){
-    return new Promise ((resolve, reject) => {
-        resolve ("posts")
-    })
-}
-async function main() {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const data = await response.json();
-}
 
+async function userPosts(userId) {
+    const  promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const result = await promise.json();
+    const posts = result.filter(element => element.userId === userId);
+    console.log(posts);
+}
+userPosts(4);
 
 
 
