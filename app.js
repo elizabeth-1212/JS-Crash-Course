@@ -454,12 +454,22 @@ console.log(sortHighToLow([
 
 
 async function userPosts(userId) {
-    const  promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
     const result = await promise.json();
     const posts = result.filter(element => element.userId === userId);
     console.log(posts);
 }
 userPosts(4);
+
+
+async function firstSixIncomplete(userId) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const result = await promise.json();
+    const incompleteTasks = result.filter(element => !element.completed).slice(0, 6);
+    console.log(incompleteTasks);    
+}   
+firstSixIncomplete(6);
+
 
 
 
